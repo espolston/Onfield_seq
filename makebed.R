@@ -23,4 +23,4 @@ for(i in 2:16){
   bed_sort <- add_row(bed_sort, bed %>% subset(V1 == order[i]))  
 }
 
-write.table(bed_sort, file = "/Users/libbypolston/Desktop/UChicago/Kreiner_lab/Coding/Onfield_sampling/dcgm_sig_ordered.bed", row.names = F, quote = F)
+write.table(bed_sort, file = "/Users/libbypolston/Desktop/UChicago/Kreiner_lab/Coding/Onfield_sampling/dcgm_sig_ordered.bed", col.names = F, row.names = F, quote = F)
