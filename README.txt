@@ -7,6 +7,9 @@ module load python/anaconda-2022.05
 #conda create -n poolseq grenedalf
 conda activate poolseq
 
+#bed file has to be in same order as sync file
+makebed.R
+
 #run in sbatch script https://github.com/lczech/grenedalf/wiki 
 grenedalf sync --sync-path excluded_max_filtered.sync --filter-region-bed dcgm_sig.bed --file-prefix onfield2024_cmh
 
