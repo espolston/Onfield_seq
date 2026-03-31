@@ -11,6 +11,6 @@ conda activate poolseq
 makebed.R
 
 #run in sbatch script https://github.com/lczech/grenedalf/wiki 
-grenedalf sync --sync-path excluded_max_filtered.sync --filter-region-bed dcgm_sig.bed --file-prefix onfield2024_cmh
+grenedalf sync --sync-path excluded_max_filtered.sync --filter-region-bed dcgm_sig.bed --file-prefix onfield2024_cmh --allow-file-overwriting
 
 #run pca
