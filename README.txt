@@ -15,6 +15,8 @@ sort -k1,1 -k2,2n dcgm_sig.bed > dcgm_sig.sorted.bed
 
 #sync file wont sort and mid doesnt have header- which is rozenn using and how??
 
+bedtools or awk for filtering
+
 
 #run in sbatch script https://github.com/lczech/grenedalf/wiki 
 grenedalf sync --sync-path excluded_max_filtered.sync --filter-region-bed dcgm_sig.sorted.bed --file-prefix onfield2024_cmh --allow-file-overwriting
