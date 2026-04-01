@@ -10,7 +10,13 @@ conda activate poolseq
 #bed file has to be in same order as sync file
 makebed.R
 
+#have to sort files lexicographically
+sort -k1,1 -k2,2n dcgm_sig.bed > dcgm_sig.sorted.bed
+
+#sync file wont sort and mid doesnt have header- which is rozenn using and how??
+
+
 #run in sbatch script https://github.com/lczech/grenedalf/wiki 
-grenedalf sync --sync-path excluded_max_filtered.sync --filter-region-bed dcgm_sig.bed --file-prefix onfield2024_cmh --allow-file-overwriting
+grenedalf sync --sync-path excluded_max_filtered.sync --filter-region-bed dcgm_sig.sorted.bed --file-prefix onfield2024_cmh --allow-file-overwriting
 
 #run pca
