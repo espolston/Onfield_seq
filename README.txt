@@ -15,6 +15,8 @@ sort -k1,1 -k2,2n dcgm_sig.bed > dcgm_sig.sorted.bed
 
 #sync file wont sort and mid doesnt have header- which is rozenn using and how??
 
+#CHECK THAT BED IS RIGHT POSitions - is it 1 or 0 based????
+
 bedtools or awk for filtering
 
 
