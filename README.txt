@@ -1,3 +1,6 @@
+#rozenns github to match filtering: https://github.com/rozenn-pineau/on-field/blob/main/drought-loci/readme.md
+#ppt of resutls: https://docs.google.com/presentation/d/1SL47rPv-wXw_-FOAZsF4SA6cPin5eDooLmSz1yHqe9I/edit?slide=id.p#slide=id.p
+
 #get sync file and cmh sites from cds3
 cp /cds3/kreiner/2024_onfield_pools/sync/excluded_max_filtered.sync /scratch/midway2/espolston/
 cp /cds3/kreiner/dcgm_filteredvcf/dcgm_sig.bed
